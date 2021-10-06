@@ -1,0 +1,137 @@
+body, html{
+  height:100%;
+}
+body{
+  margin: 0px;
+  background-image: url("https://49udcl3xen3439acx223wmat-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/dance-floor-featured.jpg");
+  background-size:cover;
+  /* background-color:#444; */
+  font-size: 18px;
+  /* display: flex;
+  flex-direction: row; */
+}
+body, a:link, a:visited, a:active{
+  color: lightblue;
+}
+.title, .addDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+
+.addAlignButton{
+  padding:5px 12px;
+  float:right;
+}
+
+.topbar{
+  height:32px;
+  background-color: #555;
+}
+.title{
+  background-color: #777;
+}
+
+img {
+  display: block;
+  max-width:95px;
+  max-height:95px;
+  /* width: auto;
+  height: auto; */
+}
+
+/* #nic {
+ width: 10px;
+ height: 10px;
+} */
+
+.bounce-1 {
+  border:10px solid blue;
+  animation-name: bounce-1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position:absolute;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateY(10px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+.dancer{
+  /* border:10px solid red; */
+  border-radius:10px;
+  position:absolute;
+
+}
+
+.shy {
+  border:10px solid yellow;
+  position:absolute;
+}
+
+.test {
+   /* position: static; */
+   top: 100px;
+   /* left: auto; */
+}
+
+@-webkit-keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+.shy:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
